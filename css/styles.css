@@ -1,0 +1,212 @@
+/*main color 434455  */
+/*title 4D5AE5 2E2F42 */
+/*secondary color weit FFFFFF*/
+/*accent color Iris 4D5AE5 2E2F42 #F4F4FD*/
+/*Name: Body;
+font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.02em;
+text-align: left;
+*/
+/* ================ VARIABLES ================ */
+:root {
+  --primary-text-color: #434455;
+  --hero-tatle-color: #ffffff;
+  --title-text-color: #2e2f42;
+  --accent-color: #4d5ae5;
+  --background-color: #f4f4fd;
+}
+body {
+  color: var(--primary-text-color);
+  background-color: var(--hero-tatle-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+}
+/*Скидываем настройки брузера*/
+.list {
+  list-style-type: none;
+} /*у класса list уберет маркеры в списке*/
+.link {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+
+/* ================ HEADER ================ */
+.logo {
+  color: var(--accent-color);
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  letter-spacing: 0.54px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.logo-pat {
+  color: var(--title-text-color);
+}
+.logo-patfooter {
+  color: #f4f4fd;
+}
+.logo:hover {
+  background-color: #404bbf;
+} /* наведение*/
+/*sate nav*/
+.site-nav .link {
+  color: var(--title-text-color);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #404bbf;
+}
+.site-nav .current {
+  color: var(--accent-color);
+}
+.address {
+  font-style: normal;
+  color: var(--primary-text-color);
+  text-transform: lowercase;
+}
+.list-address {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+.list-address:hover,
+.list-address:focus {
+  color: #404bbf;
+}
+/* ================ HERO ================ */
+.hero {
+  background-color: #2e2f42;
+}
+.hero-title {
+  color: var(--hero-tatle-color);
+  font-size: 56px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.07;
+  text-align: center;
+}
+/* sektion*/
+.section-title {
+  color: var(--title-text-color);
+
+  font-size: 36px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.02em;
+  line-height: 1.11;
+}
+/* Our principles*/
+.principles-list .title {
+  color: var(--title-text-color);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+.principles-list .paragraph {
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.32px;
+}
+/* What are we doing*/
+
+/* Our Team*/
+.team {
+  background-color: #f4f4fd;
+}
+.team .title {
+  color: var(--title-text-color);
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  font-weight: 500;
+  background-color: #f4f4fd;
+  text-align: center;
+}
+.team-designer {
+  background-color: var(--hero-tatle-color);
+}
+.team .post {
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.32px;
+
+  font-weight: 500;
+}
+/* button*/
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  color: var(--hero-tatle-color);
+  background-color: var(--accent-color);
+  text-align: center;
+  cursor: pointer;
+}
+
+.portfolio-button {
+  color: var(--accent-color);
+
+  background-color: var(--background-color);
+
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+  color: #ffffff;
+  background-color: #404bbf;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--hero-tatle-color);
+  background-color: #404bbf;
+}
+/* footer*/
+.footer {
+  background-color: var(--title-text-color);
+}
+.text-footer {
+  font-size: 16px;
+  line-height: 1.5;
+  /* 150% */
+  letter-spacing: 0.32px;
+  color: #f4f4fd;
+}
+
+/* ================ Portfolio ================ */
+.app .title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2; /* 120% */
+  letter-spacing: 0.4px;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+.app .paragraph {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
