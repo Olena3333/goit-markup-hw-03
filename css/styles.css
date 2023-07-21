@@ -110,6 +110,7 @@ button {
 .header-nav {
   display: flex;
   align-items: center;
+  gap: 40px;
 }
 .header-conteiner {
   display: flex;
@@ -125,6 +126,7 @@ button {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.32px;
+  gap: 40px;
 }
 
 .header-nav-item {
@@ -141,6 +143,8 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-weight: 500;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .address .address-link:hover,
 .address .address-link:focus {
@@ -233,8 +237,7 @@ button {
   text-align: center;
   letter-spacing: 0.02em;
   line-height: 1.11;
-  padding-top: 0px;
-  padding-bottom: 72px;
+  padding-top: 120px;
   margin-bottom: 72px;
 }
 /* Our principles*/
@@ -266,7 +269,7 @@ button {
 /* What are we doing*/
 .section-about-us {
   padding-top: 120px;
-  padding-bottom: 0px;
+  padding-bottom: 120px;
   display: flex;
 }
 .container-section-about-us {
@@ -287,7 +290,7 @@ button {
 /* Our Team*/
 .about-us-team {
   background-color: var(--background-color);
-  padding-top: 120px;
+  padding-top: 0px;
   padding-bottom: 120px;
 }
 .team {
