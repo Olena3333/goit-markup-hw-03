@@ -1,38 +1,62 @@
 :root {
-    --primary-text-color: #434455;
-    --hero-tatle-color: #ffffff;
-    --title-text-color: #2e2f42;
-    --accent-color: #4d5ae5;
-    --background-color: #f4f4fd;
-  }
+  --primary-text-color: #434455;
+  --hero-tatle-color: #ffffff;
+  --title-text-color: #2e2f42;
+  --accent-color: #4d5ae5;
+  --background-color: #f4f4fd;
+}
 
-  body {
-    color: var(--primary-text-color);
-    background-color: var(--hero-tatle-color);
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.11;
-    letter-spacing: 0.72px;
-    
-  }
-  a {
-    text-decoration: none;
-    color: currentColor;
-  }
-  ul, ol {
-    list-style-type: none;
-  }
-  button {
-    font-family: inherit;
-    cursor: pointer;
-  }
-  address {
-    font-style: normal;
-  }
+body {
+  color: var(--primary-text-color);
+  background-color: var(--hero-tatle-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+ul, ol {
+  list-style-type: none;
+}
+button {
+  font-family: inherit;
+  cursor: pointer;
+  font-family: inherit;
+}
+img {
+  display: block;
+} 
+address {
+  font-style: normal;
+}
+.visually-hidden,
+.read-only {
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+white-space: nowrap;
+clip: rect(0 0 0 0);
+clip-path: inset(50%);
+overflow: hidden;
+} 
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
 
-  /* ================ HEADER ================ */
+}
+
+/* ================ HEADER ================ */
 /* .page-header {
 }
 .header-nav {
@@ -40,46 +64,46 @@
 
 .header-logo,
 .footer-logo
- {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--accent-color);
+{
+font-family: 'Raleway', sans-serif;
+font-weight: 700;
+font-size: 18px;
+line-height: 1.17;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--accent-color);
 }
 .logo-part {
 color: #2e2f42;
-  }
-  
+}
+
 .footer-logo .logo-part {
 color: var(--background-color);
-  }
-  
+}
+
 /* .nav-list {
 }
 .nav-item {
 } */
 .nav-link {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--title-text-color);
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--title-text-color);
 }
 .contacts {
-    font-style: normal;
+  font-style: normal;
 }
 /* .contacts-list {
 }
 .contacts-item {
 } */
 .contacts-link {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--primary-text-color);
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--primary-text-color);
 }
 /* .contacts-link {
 } */
@@ -91,7 +115,7 @@ color: #404bbf;
 }
 /* ================ HERO ================ */
 .hero {
-    background-color: var(--title-text-color);
+  background-color: var(--title-text-color);
 }
 .hero-title {
 font-weight: 700;
@@ -115,18 +139,18 @@ background-color: #404BBF;
 }
 /* sektion*/
 .section {
-    background-color: var(--background-color)
+  background-color: var(--background-color)
 }
 .section-title {
-    color: var(--title-text-color);
-    font-size: 36px;
-    font-weight: 700;
-    text-align: center;
-    letter-spacing: 0.02em;
-    line-height: 1.11;
-    text-transform: capitalize;
-  }
-  /* Our principles*/
+  color: var(--title-text-color);
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.02em;
+  line-height: 1.11;
+  text-transform: capitalize;
+}
+/* Our principles*/
 .principles-list {
 color: var(--title-text-color);
 font-size: 20px;
@@ -149,7 +173,7 @@ color: var(--title-text-color);
 .team-item-text,
 .portfolio-item-text,
 .footer-text 
- {
+{
 font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
@@ -160,13 +184,13 @@ color: var(--primary-text-color);
 /* .team-list {
 }*/
 .team-item {
-    background-color: var(--hero-tatle-color); 
+  background-color: var(--hero-tatle-color); 
 } 
 
 
- /* section Our Portfolio */ 
+/* section Our Portfolio */ 
 
-  /* Footer */ 
+/* Footer */ 
 .footer {
 background: var(--title-text-color);
 }
