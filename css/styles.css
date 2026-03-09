@@ -32,22 +32,27 @@ a {
   text-decoration: none;
   color: currentColor;
 }
+
 ul, ol {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
+
 button {
   font-family: inherit;
   cursor: pointer;
   font-family: inherit;
 }
+
 img {
   display: block;
 } 
+
 address {
   font-style: normal;
 }
+
 .visually-hidden,
 .read-only {
 position: absolute;
@@ -61,21 +66,23 @@ clip: rect(0 0 0 0);
 clip-path: inset(50%);
 overflow: hidden;
 } 
+
 .container {
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
-
 }
 
 /* ================ HEADER ================ */
  .page-header {
   border-bottom: 1px solid #e7e9fc;
 }
+
 .header-container {
   display: flex;
   align-items: center;
 }
+
 .header-nav {
   display: flex;
   align-items: center;
@@ -96,46 +103,51 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--accent-color);
 }
+
 .logo-part {
 color: #2e2f42;
 }
-
-
 
 .nav-list {
   display: flex;
   align-items: center;
   gap: 40px;
 }
+
 .nav-item {
-  
 } 
+
 .nav-link {
+display: block;
+padding: 24px 0;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--title-text-color);
-padding: 24px 0;
 }
+
 .contacts {
   font-style: normal;
   margin-left: auto;
 }
+
 .contacts-list {
   display: flex;
   align-items: center;
   gap: 40px;
 }
+
 .contacts-item {
 } 
+
 .contacts-link {
+display: block;
+padding: 24px 0;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--primary-text-color);
-padding: 24px 0;
-
 }
 
 .nav-link:hover,
@@ -144,6 +156,7 @@ padding: 24px 0;
 .contacts-link:focus {
 color: #404bbf;
 }
+
 /* ================ HERO ================ */
 .hero {
   background-color: var(--title-text-color);
