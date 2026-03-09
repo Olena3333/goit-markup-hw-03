@@ -7,8 +7,8 @@
 }
 
 body {
-  color: var(--primary-text-color);
-  background-color: var(--hero-tatle-color);
+  color: var(--hero-tatle-color);
+  background-color: var(--background-color);
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -16,8 +16,8 @@ body {
   line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
-  
 }
+
 h1,
 h2,
 h3,
@@ -70,9 +70,21 @@ overflow: hidden;
 .container {
   max-width: 1158px;
   padding: 0 15px;
-  margin: 120px auto;
+  margin: 0 auto;
 }
 
+/* button*/
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  color: var(--hero-tatle-color);
+  background-color: var(--accent-color);
+  text-align: center;
+  cursor: pointer;
+}
 /* ================ HEADER ================ */
  .page-header {
   border-bottom: 1px solid #e7e9fc;
@@ -171,7 +183,7 @@ background-color: var(--title-text-color);
 }
 
 .hero-title {
-font-weight: 496px;
+font-weight: 700;
 margin: 0 auto;
 color: var(--hero-tatle-color);
 font-size: 56px;
@@ -187,16 +199,9 @@ border-radius: 4px;
 margin-top: 54px;
 margin-left: auto;
 margin-right: auto;
-background: var(--accent-color);
 min-width: 169px;
 padding: 16px 31px;
 border: transparent;
-font-weight: 500;
-line-height: 1.5;
-color: var(--hero-tatle-color);
-font-size: 16px;
-letter-spacing: 0.04em;
-
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -206,6 +211,8 @@ background-color: #404BBF;
 /* sektion*/
 
 .section-title {
+  
+  margin-bottom: 72px;
   color: var(--title-text-color);
   font-size: 36px;
   font-weight: 700;
@@ -216,6 +223,11 @@ background-color: #404BBF;
 }
 
 /* Our principles*/
+
+.section-principe {
+  margin-top: 120px;
+  margin-bottom: 120px; 
+}
 
 .principles-list {
 display: flex;
@@ -228,19 +240,20 @@ gap: 24px;
   width: calc(calc(100% - 24px * 3) / 4);
 }
 
-.principle-title, 
+.principle-item-title, 
 .team-item-title,
 .portfolio-item-title   
 {
+margin-bottom: 8px;
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 text-transform: capitalize;
 color: var(--title-text-color);
-margin-bottom: 8px;
 }
-.principle-text,
+
+.principle-item-text,
 .team-item-text,
 .portfolio-item-text,
 .footer-text 
@@ -251,29 +264,109 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--primary-text-color);
 }
+
 /* Our Team*/
-/* .team-list {
-}*/
-.team-item {
-  background-color: var(--hero-tatle-color); 
+.section-team {
+  padding-bottom: 120px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
+.team-list-item {
+  display: block;
+  background-color: var(--hero-tatle-color);
+  text-align: center;
+  width: calc(calc(100% - 24px * 3) / 4);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 } 
 
+.team-list-item:last-child {
+  margin-right: 0px;
+}
+.team-title {
+  color: var(--title-text-color);
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  letter-spacing: 0.02em;
+}
+.team-item-text {
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.32px;
+  font-weight: 500;
+}
+.team-text-wrapper {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 
 /* section Our Portfolio */ 
+.section-portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+.portfolio-list-item {
+  width: calc((100% - 48px) / 3);
+}
+
+.portfolio-content-wrapper {
+  padding: 32px 16px;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  width: 100%;
+}
 
 /* Footer */ 
 .footer {
 background: var(--title-text-color);
+padding: 100px 0px;
 }
 
 .footer-logo {
-color: var(--accent-color)
+color: var(--accent-color);
 }
+
+.footer-content {
+  display: block;
+}
+
 .footer-logo .logo-part {
   color: var(--background-color);
   }
+
+.footer-logo {
+  display: inline-block;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+
+
 .footer-text {
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: var(--background-color);
+  letter-spacing: 0.02em;
+  width: 264px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  color: var(--background-color);
 }
