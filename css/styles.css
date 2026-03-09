@@ -52,8 +52,7 @@ address {
   font-style: normal;
 }
 
-.visually-hidden,
-.read-only {
+.visually-hidden {
 position: absolute;
 width: 1px;
 height: 1px;
@@ -167,11 +166,11 @@ color: #404bbf;
 
 /* ================ HERO ================ */
 .hero {
-background-color: var(--title-text-color);  
+background-color: var(--title-text-color);
+padding: 188px 0;  
 }
 .hero-container {
   display: block;
-  padding: 188px 0;
   border-top: 1px solid #e7e9fc;
 }
 
